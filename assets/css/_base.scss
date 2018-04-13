@@ -1,0 +1,54 @@
+@import 'node_modules/compass-mixins/lib/compass';
+
+// FONTS
+$base-font-size:    0.85em;
+$base-line-height:  1.7em;
+$header-font:       witchedregular;
+$copy:              Register;
+$copy-bold:         RegisterBold;
+
+// ############################
+
+html, html a {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  // font-size: 1rem;
+}
+
+// ########################
+// link colors
+a {
+  @include link-colors
+  ($purple,
+   $orange,
+   $purple,
+   $purple,
+   $purple);
+   text-decoration: none;
+   border-bottom: 1px dotted #b9d54a;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  // border: 1px solid red;
+  // padding-top: 1em;
+  // background: $ivory;
+}
+
+// *, *:before, *:after {
+//   box-sizing: border-box;
+// }
+
+
