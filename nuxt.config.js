@@ -54,25 +54,17 @@ module.exports = {
         })
       }
     },
-    loaders:[
-      {
+    extend (config) {
+      const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
+      urlLoader.test = /\.(png|jpe?g|gif)$/
+
+      config.module.rules.push({
         test: /\.svg$/,
-        include: /assets\/img\/svg/,
-        loader: 'svg-sprite-loader?' + JSON.stringify({
-          name: '[name]',
-          prefixize: false
-        })
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'url-loader',
-        exclude: /assets\/img\/svg/,
-        options: {
-          limit: 100000, // 1K limit
-          name: 'img/[name].[hash:8].[ext]'
-        }
-      }
-    ]
+        // include: /assets\/img\/svgs/,
+        loader: 'vue-svg-loader',
+        exclude: /node_modules/
+      })
+    }
   }
 
 }

@@ -1,0 +1,12 @@
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  color: #000;
+  background: #fbd404;
+}
+
