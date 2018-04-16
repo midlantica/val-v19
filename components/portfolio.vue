@@ -1,60 +1,106 @@
 <!-- portfolio.vue -->
 <template>
   <section class="portfolio">
-    <!-- <ValLogo/> -->
-    <use xlink:href="#valentina_logo"></use>
-    <div class="gridPic gridPic01" alt=""></div>
-    <div class="gridPic gridPic02" alt=""></div>
-    <div class="gridPic gridPic03" alt=""></div>
-    <div class="gridPic gridPic04" alt=""></div>
-    <div class="gridPic gridPic05" alt=""></div>
-    <div class="gridPic gridPic06" alt=""></div>
-    <div class="gridPic gridPic07" alt=""></div>
-    <div class="gridPic gridPic08" alt=""></div>
-    <div class="gridPic gridPic09" alt=""></div>
-    <div class="gridPic gridPic10" alt=""></div>
 
-    <div class="gridPic gridPic01" alt=""></div>
-    <div class="gridPic gridPic02" alt=""></div>
-    <div class="gridPic gridPic03" alt=""></div>
-    <div class="gridPic gridPic04" alt=""></div>
-    <div class="gridPic gridPic05" alt=""></div>
-    <div class="gridPic gridPic06" alt=""></div>
-    <div class="gridPic gridPic07" alt=""></div>
-    <div class="gridPic gridPic08" alt=""></div>
-    <div class="gridPic gridPic09" alt=""></div>
-    <div class="gridPic gridPic10" alt=""></div>
+    <div class="gridPic gridPic01" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic02" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic03" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic04" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic05" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic06" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic07" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic08" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic09" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic10" alt="">
+      <a href="#">
+      </a>
+    </div>
+
+    <div class="gridPic gridPic01" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic02" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic03" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic04" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic05" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic06" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic07" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic08" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic09" alt="">
+      <a href="#">
+      </a>
+    </div>
+    <div class="gridPic gridPic10" alt="">
+      <a href="#">
+      </a>
+    </div>
 
   </section>
 </template>
 
 <script>
-  // import ValLogo from '~/assets/img/valentina_logo';
-  export default {
-    components: {
-      // ValLogo
-    }
-  }
+
 </script>
 
 <style lang="scss" scoped>
   @import "~assets/css/main.scss";
-
-  #valentina_logo {
-    width: 219x;
-    height: 88px;
-    border: 1px solid red;
-    display: block;
-  }
 
   .portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    //
-    width: calc(100%);
-    // height: 200px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     align-items: center;
     align-content: center;
@@ -62,7 +108,7 @@
     // background: red;
 
     .gridPic {
-      height: 200px;
+      // height: 200px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -100,43 +146,153 @@
       }
 
       &.gridPic01 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/spring_paisley.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/spring_paisley.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic02 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/valentines_birds.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/valentines_birds.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic03 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/birds_and_flowers.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/birds_and_flowers.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic04 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/boho_flowers.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/boho_flowers.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic05 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/candy_flowers.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/candy_flowers.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic06 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/cute_little_owls.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/cute_little_owls.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic07 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/dahlias.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/dahlias.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic08 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/doodles_garden.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/doodles_garden.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic09 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/ethnic_stripes.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/ethnic_stripes.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
       &.gridPic10 {
+        color: black;
         background: url(~assets/img/art/gallery/patterns/flowers_doodles.jpg);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background: url(~assets/img/art/gallery/patterns/flowers_doodles.jpg);
+          opacity: .5;
+          content: "Duuude";
+          color: black;
+          // background: transparentize($green, .5);
+        }
       }
 
     }

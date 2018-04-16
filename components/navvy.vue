@@ -1,11 +1,6 @@
 <!-- navvy.vue -->
 <template>
   <div class="navvyArea">
-    <div class="logoArea">
-      <div class="valentinaLogo"></div>
-      <!-- <h2>Valentina Harper</h2> -->
-      <!-- <h4>Art & Design</h4> -->
-    </div>
     <nav>
       <ul>
         <li class="indexBtn">
@@ -31,12 +26,7 @@
 </template>
 
 <script>
-  // import '~/components/svgs.svg'
-  // export default {
-  //   components: {
-  //     valLogo
-  //   }
-  // }
+
 </script>
 
 <style lang="scss" scoped>
@@ -49,42 +39,11 @@
     // line-height: 0;
   }
 
-  .valentinaLogo {
-    background: url(~assets/img/valentina_logo.svg);
+  h1, h2, h3, h4, h5 {
+    margin: 0 auto;
     display: block;
-    background-repeat: no-repeat;
-    background-size: 218px 85px;
-    width: 218px;
-    height: 85px;
-    text-align: center;
-    margin: 0em auto;
-    // fill: red;
-  }
-
-  .logoArea {
-    margin: 0;
-    padding: 0em 0em 1em;
-    text-align: center;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    list-style: none;
-    // flex-direction: column;
-
-    h2 {
-      margin: 0 auto;
-      display: block;
-      // align-self: flex-start;
-      // flex-shrink: 1;
-    }
-
-    h4 {
-      margin: 0 auto;
-      display: block;
-      // align-self: flex-end;
-      // flex-shrink: 1;
-    }
-
+    // align-self: flex-start;
+    // flex-shrink: 1;
   }
 
   nav {
