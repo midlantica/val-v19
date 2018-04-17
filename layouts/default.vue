@@ -17,8 +17,8 @@
 </template>
 
 <script>
-  import ValLogoSVG from '~/assets/img/valentina_logo.svg';
-  import FooterSVG from '~/assets/img/svgs/footer.svg';
+  import ValLogoSVG from '~/assets/img/valentina_logo.svg'
+  import FooterSVG from '~/assets/img/svgs/footer.svg'
   import navvy from '~/components/navvy.vue'
   export default {
     components: {
