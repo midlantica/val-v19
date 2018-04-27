@@ -2,9 +2,7 @@
 <template>
   <section class="portfolio">
 
-    <lightbox
-      :images="images"
-    ></lightbox>
+    <vue-images :imgs="images"></vue-images>
 
   </section>
 </template>
@@ -12,55 +10,52 @@
 <script>
   const pats = 'assets/img/art/gallery/patterns/'
 
-  if (process.BROWSER_BUILD) {
-    require('vLightbox')
-  }
-  // import lightbox from 'vlightbox'
+  import vueImages from 'vue-images'
   export default {
     components: {
-      // vlightbox
+      vueImages: vueImages
     },
     data () {
       return {
         images: [
           {
-            src: pats+'spring_paisley.jpg',
+            imageUrl: pats+'spring_paisley.jpg',
             caption: 'Spring Paisley'
           },
           {
-            src: pats+'valentines_birds.jpg',
+            imageUrl: pats+'valentines_birds.jpg',
             caption: 'Valentines Birds'
           },
           {
-            src: pats+'birds_and_flowers.jpg',
+            imageUrl: pats+'birds_and_flowers.jpg',
             caption: 'Birds and Flowers'
           },
           {
-            src: pats+'boho_flowers.jpg',
+            imageUrl: pats+'boho_flowers.jpg',
             caption: 'Boho Flowers'
           },
           {
-            src: pats+'candy_flowers.jpg',
+            imageUrl: pats+'candy_flowers.jpg',
             caption: 'Candy Flowers'
           },
           {
-            src: pats+'cute_little_owls.jpg',
+            imageUrl: pats+'cute_little_owls.jpg',
             caption: 'Cute Little Owls'
           },
           {
-            src: pats+'dahlias.jpg',
+            imageUrl: pats+'dahlias.jpg',
             caption: 'Dahlias'
           },
           {
-            src: pats+'doodles_garden.jpg',
+            imageUrl: pats+'doodles_garden.jpg',
             caption: 'Doodles Garden'
           },
           {
-            src: pats+'ethnic_stripes.jpg',
+            imageUrl: pats+'ethnic_stripes.jpg',
             caption: 'Ethnic Stripes'
           },
           {
-            src: pats+'flowers_doodles.jpg',
+            imageUrl: pats+'flowers_doodles.jpg',
             caption: 'Flowers Doodles'
           }
         ]

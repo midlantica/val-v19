@@ -35,7 +35,9 @@ module.exports = {
   */
   plugins: [
     // '~/node_modules/modernizr'
-    '~/plugins/svg-sprite-loader'
+    '~/plugins/svg-sprite-loader',
+    { src: '@/plugins/vLightbox', ssr: false }
+    // ssr: false to only include it on client-side
   ],
   /*
   ** Build configuration
@@ -65,6 +67,6 @@ module.exports = {
         exclude: /node_modules/
       })
     }
-  }
-
+  },
+  vendor: ['vLightbox']
 }
