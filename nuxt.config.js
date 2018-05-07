@@ -35,8 +35,9 @@ module.exports = {
   */
   plugins: [
     // '~/node_modules/modernizr'
-    '~/plugins/svg-sprite-loader',
-    { src: '@/plugins/vLightbox', ssr: false }
+    // { src: '~/plugins/svg-sprite-loader', ssr: false },
+    // { src: '~/plugins/vLightbox.js', ssr: false }
+    { src: '~/plugins/vueImg.js', ssr: false }
     // ssr: false to only include it on client-side
   ],
   /*

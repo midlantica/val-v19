@@ -2,7 +2,6 @@
   <div class="container">
     <header>
       <a href="/">
-        <!-- <ValLogoSVG class="valLogoSVG"/> -->
         <valentinaLogo />
       </a>
       <navvy/>
@@ -12,22 +11,17 @@
 
     <footer>
       <navvy/>
-      <FooterSVG class="footerSVG" width="90%" height="auto"/>
+      <FooterSVG/>
     </footer>
   </div>
 </template>
 
 <script>
-  // import 'vue-images/dist/vue-images.css'
-  // require('node_modules/vue-images/dist/vue-images.css')
-
-  // import ValLogoSVG from '~/assets/img/valentina_logo.svg'
-  import FooterSVG from '~/assets/img/svgs/footer.svg'
+  import FooterSVG from '~/components/FooterSVG'
   import navvy from '~/components/navvy.vue'
-  import valentinaLogo from '~/components/icons/valentinaLogo'
+  import valentinaLogo from '~/components/valentinaLogo'
   export default {
     components: {
-      // ValLogoSVG,
       FooterSVG,
       navvy,
       valentinaLogo

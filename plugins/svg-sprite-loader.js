@@ -5,3 +5,5 @@ if (process.BROWSER_BUILD) {
   var files = require.context('~/assets/img/svgs/', false, /\.svg$/)
   files.keys().forEach(files)
 }
+
+console.log('plugin svg_sprite-loader is locked and loaded')

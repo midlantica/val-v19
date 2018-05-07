@@ -1,67 +1,295 @@
 <!-- portfolio.vue -->
 <template>
-  <section class="portfolio">
+  <!-- <no-ssr> -->
+    <section class="portfolio">
 
-    <lightbox
-      :images="images"
-    ></lightbox>
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/i_spy.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="I Spy"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/birds_in_the_garden.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="birds_in_the_garden.jpg"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/birds-with-flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="Birds and Flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/butterflies.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="butterflies"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/doodles_garden.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="doodles_garden"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/folkbirds.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="folkbirds"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/pods_and_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="pods_and_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/rachel.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="rachel"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/sofia.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="sofia"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/stella.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="stella"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/07.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="07"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/amelia.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="amelia"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/baby_dino.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="baby_dino"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/be_my_valentine.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="be_my_valentine"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/beatriz.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="beatriz"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/birds_and_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="birds_and_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/blooming.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="blooming"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/boho_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="boho_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/candy_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="candy_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/cayenas.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="cayenas"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/cute_little_owls.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="cute_little_owls"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/dahlias.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="dahlias"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/doodles_black_and_yellow.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="doodles_black_and_yellow"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/eli.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="eli"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/ethnic_stripes.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="ethnic_stripes"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/flowers_doodles.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="flowers_doodles"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/flowers_in_brown.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="flowers_in_brown"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/flowers_pattern.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="flowers_pattern"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/lets_cook.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="lets_cook"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/lila.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="lila"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/little_birds.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="little_birds"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/lovely_birds.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="lovely_birds"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/marisa.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="marisa"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/orange_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="orange_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/orange_grey_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="orange_grey_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/owls.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="owls"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/pods.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="pods"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/random_flowers.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="random_flowers"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/retro_coffee.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="retro_coffee"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/retro.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="retro"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/reverie.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="reverie"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/spring_paisley.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="spring_paisley"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/under_the_sea.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="under_the_sea"
+      >
+      <img class="vImgThumbs"
+        v-img src="~assets/img/art/gallery/patterns/valentines_birds.jpg"
+        v-img="{ group: 'Patterns' }"
+        alt="valentines_birds"
+      >
 
-  </section>
+
+    </section>
+  <!-- </no-ssr> -->
 </template>
 
 <script>
-  const pats = 'assets/img/art/gallery/patterns/'
+  // assets/img/art/gallery/patterns/spring_paisley.jpg
+  const pats = 'static/img/art/gallery/patterns/'
 
-  if (process.BROWSER_BUILD) {
-    require('vLightbox')
-  }
-  // import lightbox from 'vlightbox'
   export default {
+    // name: lightbox,
     components: {
-      // vlightbox
+      // portfolio-
     },
     data () {
       return {
         images: [
           {
-            src: pats+'spring_paisley.jpg',
-            caption: 'Spring Paisley'
+            title: 'Spring Paisley',
+            src: pats + 'spring_paisley.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'valentines_birds.jpg',
-            caption: 'Valentines Birds'
+            title: 'Valentines Birds',
+            src: pats + 'valentines_birds.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'birds_and_flowers.jpg',
-            caption: 'Birds and Flowers'
+            title: 'Birds and Flowers',
+            src: pats + 'birds_and_flowers.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'boho_flowers.jpg',
-            caption: 'Boho Flowers'
+            title: 'Boho Flowers',
+            src: pats + 'boho_flowers.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'candy_flowers.jpg',
-            caption: 'Candy Flowers'
+            title: 'Candy Flowers',
+            src: pats + 'candy_flowers.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'cute_little_owls.jpg',
-            caption: 'Cute Little Owls'
+            title: 'Cute Little Owls',
+            src: pats + 'cute_little_owls.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'dahlias.jpg',
-            caption: 'Dahlias'
+            title: 'Dahlias',
+            src: pats + 'dahlias.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'doodles_garden.jpg',
-            caption: 'Doodles Garden'
+            title: 'Doodles Garden',
+            src: pats + 'doodles_garden.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'ethnic_stripes.jpg',
-            caption: 'Ethnic Stripes'
+            title: 'Ethnic Stripes',
+            src: pats + 'ethnic_stripes.jpg',
+            group: 'Patterns'
           },
           {
-            src: pats+'flowers_doodles.jpg',
-            caption: 'Flowers Doodles'
+            title: 'Flowers Doodles',
+            src: pats + 'flowers_doodles.jpg',
+            group: 'Patterns'
           }
         ]
       }
@@ -79,202 +307,37 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: auto;
+    // height: 100px;
     margin: 0 auto;
     align-items: center;
     align-content: center;
     @include clearfix;
-    // background: red;
+    //
+    // background: beige;
+    // border: 1px solid red;
+    //
+    .vImgThumbs {
+      width: 200px;
+      height: 200px;
+      margin: .25em .25em;
+      border: 1px solid grey;
 
-    .gridPic {
-      // height: 200px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 2px;
-      // width: calc(19.6%);
-
-      @media (min-width: 424px) {
-        width: calc(49.1%);
-        height: 150px;
-        border: 0px solid orange;
+      img {
+        width: 100px;
+        border: 1px sild red;
       }
 
-      @media (min-width: 520px) and (min-width: 960px) {
-        width: calc(19.5%);
-        height: 176px;
-        border: 0px solid green;
+      .fullscreen-v-img {
+        background-color: rgba(0, 0, 0, 0.8);
       }
 
-      @media (min-width: 961px) and (min-width: 1400px) {
-        width: calc(9.4%);
-        height: 137px;
-        border: 0px solid red;
-      }
-
-      @media (min-width: 1401px) and (min-width: 1500px) {
-        width: calc(19.7%);
-        height: 175px;
-        border: 0px solid blue !important;
-      }
-
-      @media (min-width: 1500px) {
-        width: calc(9.7%);
-        height: 158px;
-        border: 0px solid pink !important;
-      }
-
-      &.gridPic01 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/spring_paisley.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/spring_paisley.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic02 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/valentines_birds.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/valentines_birds.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic03 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/birds_and_flowers.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/birds_and_flowers.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic04 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/boho_flowers.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/boho_flowers.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic05 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/candy_flowers.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/candy_flowers.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic06 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/cute_little_owls.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/cute_little_owls.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic07 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/dahlias.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/dahlias.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic08 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/doodles_garden.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/doodles_garden.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic09 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/ethnic_stripes.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/ethnic_stripes.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
-      }
-
-      &.gridPic10 {
-        color: black;
-        background: url(~assets/img/art/gallery/patterns/flowers_doodles.jpg);
-        cursor: pointer;
-        text-align: center;
-
-        &:hover {
-          background: url(~assets/img/art/gallery/patterns/flowers_doodles.jpg);
-          opacity: .5;
-          content: "Duuude";
-          color: black;
-          // background: transparentize($green, .5);
-        }
+      .header-v-img {
+         background-color: rgba(0, 0, 0, 0.5);
       }
 
     }
 
   }
+
+
 </style>

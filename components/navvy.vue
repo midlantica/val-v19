@@ -8,7 +8,7 @@
           </a>
         </li>
         <li class="galleryBtn">
-          <a href="gallery">Gallery
+          <a href="artOriginals">Gallery
           </a>
         </li>
         <li class="shopBtn">

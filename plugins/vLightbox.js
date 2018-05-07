@@ -1,12 +1,9 @@
-
 import Vue from 'vue'
-import vLightbox from 'vLightbox'
+import lightbox from 'vlightbox'
+Vue.use('lightbox', {name: 'vlightbox'})
 
-const vLightboxVar = {
-  install(Vue, options) {
-    Vue.component('vLightbox', vLightbox)
-  }
+if (process.BROWSER_BUILD) {
+  Vue.use(lightbox, {name: 'vlightbox'})
 }
 
-Vue.use('vLightbox')
-export default vLightbox
+console.log('plugin vlightbox is locked and loaded')
